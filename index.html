@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!--Informacion de la pagina-->
+        <meta name="author" content="Daniel Cubillos Flores">
+        <meta name="description" content="">
+        <meta name="keywords" content=""> 
+        <title>PokeApi</title>
+        <!--Estilos CSS-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!--Google Font: -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+        <!-- Font Awesome - Icons -->
+        <script src="https://kit.fontawesome.com/e0c325ff0d.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <body class="">        
+        <nav class="bg-danger">
+            <img src="assets/img/pokeapi_256.888baca4.png" alt="Logo PokeApi">
+        </nav>
+
+        <main class="pokedex container">
+          
+            <header class="header">
+                <div class="header__buttons">
+                    <svg height="95" width="95">
+                        <circle cx="45" cy="45" r="35" fill="blue" />
+                        <circle cx="35" cy="35" r="13" fill="lightblue" />
+                    </svg>
+                    <svg height="36" width="36">
+                        <circle cx="20" cy="20" r="15" fill="red" />
+                    </svg>
+                </div>
+
+                <div class="header__input">
+                    <input type="text" placeholder="Escribe el Pokémon" id="inputPoke">
+                    <button class="ml-auto" id="buttonPoke1">Buscar</button>
+                </div>
+
+                <div class="header__select">
+                    <select name="" id="selectPoke">
+                        <option value="" disabled>SELECCIONE</option>
+                    </select>
+                </div>
+            </header>
+            <hr>
+            
+            <section class="pokeData row container">
+                <div class="col-4">
+                    <h2 id="pokeName">POKEMON</h2>
+                    <h3>Tipo</h3>
+                    <p class="pokeData__type" id="type1"></p>
+                    <p class="pokeData__type" id="type2">Agua</p>
+                    <h3 class="mt-3">Habilidad</h3>
+                    <p class="pokeData__hab" id="ability">Bien culero</p>
+                </div>
+                <div class="col-8 pokeData__img">
+                    <img id="pokeSprite1" alt="">
+                    <img id="pokeSprite2" alt="">
+                </div>            
+            </section>
+            <hr>
+            
+            <section class="pokeStats container">
+                <h3 class="mb-3">Stats</h3>
+                <div class="row">
+                    <div class="col-3">
+                        <h4>HP: <span id="hp"> -</span></h4>
+                        <h4>Ataque: <span id="attack"> -</span></h4>
+                        <h4>Defensa: <span id="defense"> -</span></h4>
+                    </div>
+                    <div class="col-3">
+                        <h4>Velocidad: <span id="speed"> -</span></h4>
+                        <h4>At. Especial: <span id="attackSP"> -</span></h4>
+                        <h4>Def. Especial: <span id="defenseSP"> -</span></h4>
+                    </div>
+                    <div class="col-6">
+
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+
+
+        <footer></footer>
+
+        
+        <!--jQuery 3.5.1-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!--Popper JS 2.6.0-->
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+        <!--Bootstrap JS 5.0-->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+        <!--mi script de js-->  
+            <script src="assets/js/script.js"></script>
+    </body>
+</html>

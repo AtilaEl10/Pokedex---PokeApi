@@ -1,0 +1,30 @@
+// Manifesto
+
+// Abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixin';
+
+// Vendors
+@import 'vendors/bootstrap-4.5.3/bootstrap.scss';
+
+// Base
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/base';
+
+// Layout
+@import 'layout/header';
+@import 'layout/main-section';
+@import 'layout/footer';
+@import 'layout/_stats-section';
+
+//Components
+@import 'components/buttons';
+@import 'components/carousel';
+@import 'components/navigations';
+@import 'components/thumbnails';
+
+// Page
+
+// Themes
