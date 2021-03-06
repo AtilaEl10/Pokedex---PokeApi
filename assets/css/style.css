@@ -10044,13 +10044,13 @@ button {
 }
 
 input {
-  border: 0.5px solid blue;
-  color: blue;
+  border: 0.5px solid red;
+  color: gray;
 }
 
 select {
   border: 0.5px solid red;
-  color: red;
+  color: gray;
 }
 
 .pokeIcon {
