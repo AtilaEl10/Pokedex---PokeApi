@@ -57,6 +57,48 @@ $("document").ready(function(){
                 let defenseSP = data.stats[4].base_stat;
                 $("#defenseSP").text(defenseSP);
 
+                /// Grafico
+                var pokeStats = [
+                    hp,
+                    attack,
+                    defense,
+                    speed,
+                    attackSP,
+                    defenseSP,
+                ];
+                var pokeStatsName = [
+                    'HP',
+                    'Ataque',
+                    'Defensa',
+                    'Velocidad',
+                    'Ataque Especial',
+                    'Defensa Especial',
+                ];
+
+                /* Chart JS */
+                var ctx = document.querySelector('#chartContainer');
+        
+                var pokeGraph = new Chart(ctx, {
+                  type: 'radar',
+                  data: {
+                    labels: pokeStatsName,
+                    datasets: [{
+                      data: pokeStats,
+                      label: pokeName,
+                      backgroundColor: 'rgba(239, 83, 80, 0.25)',
+                      borderColor: 'rgba(239, 83, 80, 0.5)',
+                    }]
+                  },
+                  options: {
+                    scale: {
+                      ticks: {
+                          suggestedMin: 0,
+                          suggestedMax: 200
+                      }
+                  }
+                  }
+                });
+
                 // Tipo principal
                 const type1 = data.types[0].type.name;
                 tipo()
@@ -277,6 +319,48 @@ $("document").ready(function(){
                 let defenseSP = data.stats[4].base_stat;
                 $("#defenseSP").text(defenseSP);
 
+                /// Grafico
+                var pokeStats = [
+                    hp,
+                    attack,
+                    defense,
+                    speed,
+                    attackSP,
+                    defenseSP,
+                ];
+                var pokeStatsName = [
+                    'HP',
+                    'Ataque',
+                    'Defensa',
+                    'Velocidad',
+                    'Ataque Especial',
+                    'Defensa Especial',
+                ];
+
+                /* Chart JS */
+                var ctx = document.querySelector('#chartContainer');
+        
+                var pokeGraph = new Chart(ctx, {
+                  type: 'radar',
+                  data: {
+                    labels: pokeStatsName,
+                    datasets: [{
+                      data: pokeStats,
+                      label: pokeName2,
+                      backgroundColor: 'rgba(239, 83, 80, 0.25)',
+                      borderColor: 'rgba(239, 83, 80, 0.5)',
+                    }]
+                  },
+                  options: {
+                    scale: {
+                      ticks: {
+                          suggestedMin: 0,
+                          suggestedMax: 200
+                      }
+                  }
+                  }
+                });
+
                 // Tipo Principal
                 const type1b = data.types[0].type.name;
                 tipob()
@@ -459,6 +543,4 @@ $("document").ready(function(){
             }
         })
     });
-
-
 })

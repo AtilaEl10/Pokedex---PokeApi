@@ -143,29 +143,33 @@
             </div>
 
             <section class="pokeStats container">
-                <h3 class="mb-3">Stats</h3>
-                <div class="row">
-                    <div class="col-3">
-                        <h4>HP: <span id="hp"> -</span></h4>
-                        <h4>Ataque: <span id="attack"> -</span></h4>
-                        <h4>Defensa: <span id="defense"> -</span></h4>
-                    </div>
-                    <div class="col-3">
-                        <h4>Velocidad: <span id="speed"> -</span></h4>
-                        <h4>At. Especial: <span id="attackSP"> -</span></h4>
-                        <h4>Def. Especial: <span id="defenseSP"> -</span></h4>
-                    </div>
-                    <div class="col-6">
-
-                    </div>
+                <div class="pokeStats__stat">
+                    <h3 class="mb-3">Stats</h3>
+                    <div class="row">
+                        <div class="col-6">
+                            <h4>HP: <span id="hp"> -</span></h4>
+                            <h4>Ataque: <span id="attack"> -</span></h4>
+                            <h4>Defensa: <span id="defense"> -</span></h4>
+                        </div>
+                        <div class="col-6">
+                            <h4>Velocidad: <span id="speed"> -</span></h4>
+                            <h4>At. Especial: <span id="attackSP"> -</span></h4>
+                            <h4>Def. Especial: <span id="defenseSP"> -</span></h4>
+                        </div>
+                    </div>    
                 </div>
-
-
+                <div class="pokeStats__graph">
+                    <div><canvas id="chartContainer" style="width: 100%;"></canvas></div>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
+                </div>
             </section>
+
+            <div class="container mt-4">
+                <div class="line foot"></div>
+                <div class="line foot1"></div>
+                <div class="line foot2"></div>
+            </div>
         </main>
-
-
-        <footer></footer>
 
         
         <!--jQuery 3.5.1-->

@@ -1,3 +1,10 @@
+.pokeStats {
+    display: flex;
+    justify-content: space-between;
+    &__stat, &__graph {
+        width: 45%;
+    }
+}
 h4 {
     font-weight: bold;
     font-size: 15px;
@@ -28,4 +35,27 @@ h4 {
     width: 20px;
     margin: auto 3px;
     transition: all 1s;
+}
+
+
+.foot {
+    height: 8px;
+    width: 100%;
+    margin: 3px 0;
+    transition: all 1s;
+    opacity: 70%;
+}
+.foot1 {
+    height: 8px;
+    width: 70%;
+    margin: 3px 0;
+    transition: all 1s;
+    opacity: 70%;
+}
+.foot2 {
+    height: 8px;
+    width: 40%;
+    margin: 3px 0;
+    transition: all 1s;
+    opacity: 70%;
 }

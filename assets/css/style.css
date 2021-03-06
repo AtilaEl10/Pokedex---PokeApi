@@ -9966,6 +9966,14 @@ body {
   width: 45%;
 }
 
+.pokeStats {
+  display: flex;
+  justify-content: space-between;
+}
+.pokeStats__stat, .pokeStats__graph {
+  width: 45%;
+}
+
 h4 {
   font-weight: bold;
   font-size: 15px;
@@ -10002,6 +10010,30 @@ h4 span {
   transition: all 1s;
 }
 
+.foot {
+  height: 8px;
+  width: 100%;
+  margin: 3px 0;
+  transition: all 1s;
+  opacity: 70%;
+}
+
+.foot1 {
+  height: 8px;
+  width: 70%;
+  margin: 3px 0;
+  transition: all 1s;
+  opacity: 70%;
+}
+
+.foot2 {
+  height: 8px;
+  width: 40%;
+  margin: 3px 0;
+  transition: all 1s;
+  opacity: 70%;
+}
+
 button {
   color: white;
   border: none;
@@ -10009,6 +10041,16 @@ button {
   border-radius: 13%;
   width: 75px;
   transition: all 1s;
+}
+
+input {
+  border: 0.5px solid blue;
+  color: blue;
+}
+
+select {
+  border: 0.5px solid red;
+  color: red;
 }
 
 .pokeIcon {
@@ -10171,7 +10213,7 @@ nav img {
   position: absolute;
   z-index: 10000;
   width: 50%;
-  height: 700px;
+  height: 100%;
   background-color: #ac1414;
 }
 
@@ -10183,7 +10225,7 @@ nav img {
   position: absolute;
   z-index: 10000;
   width: 50%;
-  height: 700px;
+  height: 100%;
   background-color: #ac1414;
   right: 0;
 }
