@@ -23,6 +23,8 @@ $("document").ready(function(){
     $("#buttonPoke1").click(function(){
         const pokeName = $("#inputPoke").val()
         const pokeName0 = pokeName.trim().toLowerCase();
+        $(".icon").addClass("hide")
+        $("#type2").text("");
 
         $.ajax({
             url: `https://pokeapi.co/api/v2/pokemon/${pokeName0}`,
@@ -43,61 +45,159 @@ $("document").ready(function(){
                 function tipo () {
                     switch (type1) {
                         case "bug":
-                        $("#type1").text("Bicho");
+                            $("#type1").text("Bicho");
+                            $("#bug").removeClass("hide")
                         break;
                         case "dark":
                             $("#type1").text("Oscuro");
+                            $("#dark").removeClass("hide")
                         break;
                         case "dragon":
                             $("#type1").text("Dragón");
+                            $("#dragon").removeClass("hide")
                         break;
                         case "electric":
                             $("#type1").text("Eléctrico");
+                            $("#electric").removeClass("hide")
                         break;
                         case "fairy":
-                        $("#type1").text("Hada");
+                            $("#type1").text("Hada");
+                            $("#fairy").removeClass("hide")
                         break;
                         case "fighting":
                             $("#type1").text("Lucha");
+                            $("#fighting").removeClass("hide")
                         break;
                         case "fire":
                             $("#type1").text("Fuego");
+                            $("#fire").removeClass("hide")
                         break;
                         case "flying":
                             $("#type1").text("Volador");
+                            $("#flying").removeClass("hide")
                         break;
                         case "ghost":
-                        $("#type1").text("Fantasma");
+                            $("#type1").text("Fantasma");
+                            $("#ghost").removeClass("hide")
                         break;
                         case "grass":
                             $("#type1").text("Planta");
+                            $("#grass").removeClass("hide")
                         break;
                         case "ground":
                             $("#type1").text("Tierra");
+                            $("#ground").removeClass("hide")
                         break;
                         case "ice":
                             $("#type1").text("Hielo");
+                            $("#ice").removeClass("hide")
                         break;
                         case "normal":
-                        $("#type1").text("Normal");
+                            $("#type1").text("Normal");
+                            $("#normal").removeClass("hide")
                         break;
                         case "poison":
                             $("#type1").text("Veneno");
+                            $("#poison").removeClass("hide")
                         break;
                         case "psychic":
                             $("#type1").text("Psíquico");
+                            $("#psychic").removeClass("hide")
                         break;
                         case "rock":
                             $("#type1").text("Roca");
+                            $("#rock").removeClass("hide")
                         break;
                         case "steel":
-                        $("#type1").text("Acero");
+                            $("#type1").text("Acero");
+                            $("#steel").removeClass("hide")
                         break;
                         case "water":
                             $("#type1").text("Agua");
+                            $("#water").removeClass("hide")
                         break;
                     }
                 }
+
+                const type2 = data.types[1].type.name;
+                tipo2()
+                function tipo2 () {
+                    switch (type2) {
+                        case "bug":
+                            $("#type2").text("Bicho");
+                            $("#bug").removeClass("hide")
+                        break;
+                        case "dark":
+                            $("#type2").text("Oscuro");
+                            $("#dark").removeClass("hide")
+                        break;
+                        case "dragon":
+                            $("#type2").text("Dragón");
+                            $("#dragon").removeClass("hide")
+                        break;
+                        case "electric":
+                            $("#type2").text("Eléctrico");
+                            $("#electric").removeClass("hide")
+                        break;
+                        case "fairy":
+                            $("#type2").text("Hada");
+                            $("#fairy").removeClass("hide")
+                        break;
+                        case "fighting":
+                            $("#type2").text("Lucha");
+                            $("#fighting").removeClass("hide")
+                        break;
+                        case "fire":
+                            $("#type2").text("Fuego");
+                            $("#fire").removeClass("hide")
+                        break;
+                        case "flying":
+                            $("#type2").text("Volador");
+                            $("#flying").removeClass("hide")
+                        break;
+                        case "ghost":
+                            $("#type2").text("Fantasma");
+                            $("#ghost").removeClass("hide")
+                        break;
+                        case "grass":
+                            $("#type2").text("Planta");
+                            $("#grass").removeClass("hide")
+                        break;
+                        case "ground":
+                            $("#type2").text("Tierra");
+                            $("#ground").removeClass("hide")
+                        break;
+                        case "ice":
+                            $("#type2").text("Hielo");
+                            $("#ice").removeClass("hide")
+                        break;
+                        case "normal":
+                            $("#type2").text("Normal");
+                            $("#normal").removeClass("hide")
+                        break;
+                        case "poison":
+                            $("#type2").text("Veneno");
+                            $("#poison").removeClass("hide")
+                        break;
+                        case "psychic":
+                            $("#type2").text("Psíquico");
+                            $("#psychic").removeClass("hide")
+                        break;
+                        case "rock":
+                            $("#type2").text("Roca");
+                            $("#rock").removeClass("hide")
+                        break;
+                        case "steel":
+                            $("#type2").text("Acero");
+                            $("#steel").removeClass("hide")
+                        break;
+                        case "water":
+                            $("#type2").text("Agua");
+                            $("#water").removeClass("hide")
+                        break;
+                    }
+                }
+
                 const ability = data.abilities[0].ability.name;
                 $("#ability").text(ability);
 
