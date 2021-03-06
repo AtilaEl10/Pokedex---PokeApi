@@ -20,17 +20,20 @@
     </head>
 
     <body class="">        
-        <nav class="bg-danger">
+        <nav>
             <img src="assets/img/pokeapi_256.888baca4.png" alt="Logo PokeApi">
         </nav>
+        <div class="ball"></div>
+        <div class="vanish1"></div>
+        <div class="vanish2"></div>
 
         <main class="pokedex container">
-          
+
             <header class="header">
                 <div class="header__buttons">
                     <svg height="95" width="95">
-                        <circle cx="45" cy="45" r="35" fill="blue" />
-                        <circle cx="35" cy="35" r="13" fill="lightblue" />
+                        <circle class="circuloAzul" cx="45" cy="45" r="35" fill="blue" />
+                        <circle class="brilloAzul" cx="35" cy="35" r="13" fill="lightblue" />
                     </svg>
                     <svg height="36" width="36">
                         <circle cx="20" cy="20" r="15" fill="red" />
@@ -39,12 +42,12 @@
 
                 <div class="header__input">
                     <input type="text" placeholder="Escribe el Pokémon" id="inputPoke">
-                    <button class="ml-auto" id="buttonPoke1">Buscar</button>
+                    <button class="ml-auto line" id="buttonPoke1">Buscar</button>
                 </div>
 
                 <div class="header__select">
                     <select name="" id="selectPoke">
-                        <option value="" disabled>SELECCIONE</option>
+                        <option value="">SELECCIONE</option>
                     </select>
                 </div>
             </header>
@@ -122,8 +125,23 @@
                     <img id="pokeSprite2" alt="">
                 </div>            
             </section>
-            <hr>
-            
+
+            <div class="row ml-2 mb-3">
+                <div class="line color"></div>
+                <div class="line color"></div>
+                <div class="line color1"></div>
+                <div class="line color1"></div>
+                <div class="line color1"></div>
+                <div class="line color2"></div>
+                <div class="line color2"></div>
+                <div class="line color2"></div>
+                <div class="line color3"></div>
+                <div class="line color3"></div>
+                <div class="line color3"></div>
+                <div class="line color3"></div>
+                <div class="line color3"></div>
+            </div>
+
             <section class="pokeStats container">
                 <h3 class="mb-3">Stats</h3>
                 <div class="row">

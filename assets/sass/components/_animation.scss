@@ -1,0 +1,75 @@
+// Animacion de boton
+@keyframes luz {
+    0% { fill: blue; box-shadow: 0 0 20px rgb(139, 251, 255);}
+    50% { fill: rgb(65, 177, 252); box-shadow: 0 }
+    100% { fill: blue; box-shadow: 0 0 20px rgb(139, 251, 255);}
+}
+
+@keyframes brillo {
+    0% { fill: lightblue}
+    50% { fill: rgb(240, 251, 255);}
+    100% { fill: lightblue;}
+}
+
+.circuloAzul {
+    animation: luz;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+.brilloAzul {
+    animation: brillo;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    opacity: 80%;
+}
+
+@keyframes desaparece {
+    0% {width: 100%;}
+    100% {width: 0%;}
+}
+
+.vanish1 {
+    animation: desaparece;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    z-index: 10000;
+    width: 50%;
+    height: 700px;
+    background-color: rgb(172, 20, 20);
+}
+.vanish2 {
+    animation: desaparece;
+    animation-duration: 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    z-index: 10000;
+    width: 50%;
+    height: 700px;
+    background-color: rgb(172, 20, 20);
+    right: 0;    
+}
+
+@keyframes pequeño {
+    0% {transform: scale(1);}
+    50% {transform: scale(0.1); opacity: 100%;}
+    100%{opacity: 0%;}
+}
+.ball {
+    animation: pequeño;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    z-index: 99999;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 100%;
+}
