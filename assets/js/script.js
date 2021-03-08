@@ -1,21 +1,176 @@
 $("document").ready(function(){
-   
+        
+    
     // Agregando lista al select del html
-    $.ajax({
-        url: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151",
-        type: "GET",
-        dataType: "JSON",
-        success: function(pokemones) {
-            const pokedex = pokemones.results;
-            const pokedexName = pokedex.map(function(el) {
-                return el.name.toUpperCase();
-            });
-            pokedexName.forEach(function(element) {
-                $("#selectPoke").append(
-                    `<option value="${element}">${element}</option>`
-                )
-            })
-                
+
+    $("#gen").on("change", function(gene) {
+        // Clasificacion po generacion
+        const gen = gene.target.value;
+        region()
+
+        function region () {
+            switch (gen) {
+                case "1":
+                    $("#selectPoke option").remove()
+                    $.ajax({
+                        url: "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=151",
+                        type: "GET",
+                        dataType: "JSON",
+                        success: function(pokemones) {
+                            const pokedex = pokemones.results;
+                            const pokedexName = pokedex.map(function(el) {
+                                return el.name.toUpperCase();
+                            });
+                            pokedexName.forEach(function(element) {
+                                $("#selectPoke").append(
+                                    `<option value="${element}">${element}</option>`
+                                )
+                            })
+                                
+                        }
+                    })
+                break;
+                case "2":
+                    $("#selectPoke option").remove()
+                    $.ajax({
+                        url: "https://pokeapi.co/api/v2/pokemon/?offset=151&limit=100",
+                        type: "GET",
+                        dataType: "JSON",
+                        success: function(pokemones) {
+                            const pokedex = pokemones.results;
+                            const pokedexName = pokedex.map(function(el) {
+                                return el.name.toUpperCase();
+                            });
+                            pokedexName.forEach(function(element) {
+                                $("#selectPoke").append(
+                                    `<option value="${element}">${element}</option>`
+                                )
+                            })
+                                
+                        }
+                    })
+                break;
+                case "3":
+                    $("#selectPoke option").remove()
+                    $.ajax({
+                        url: "https://pokeapi.co/api/v2/pokemon/?offset=251&limit=135",
+                        type: "GET",
+                        dataType: "JSON",
+                        success: function(pokemones) {
+                            const pokedex = pokemones.results;
+                            const pokedexName = pokedex.map(function(el) {
+                                return el.name.toUpperCase();
+                            });
+                            pokedexName.forEach(function(element) {
+                                $("#selectPoke").append(
+                                    `<option value="${element}">${element}</option>`
+                                )
+                            })
+                                
+                        }
+                    })
+                break;
+                case "4":
+                    $("#selectPoke option").remove()
+                    $.ajax({
+                        url: "https://pokeapi.co/api/v2/pokemon/?offset=386&limit=107",
+                        type: "GET",
+                        dataType: "JSON",
+                        success: function(pokemones) {
+                            const pokedex = pokemones.results;
+                            const pokedexName = pokedex.map(function(el) {
+                                return el.name.toUpperCase();
+                            });
+                            pokedexName.forEach(function(element) {
+                                $("#selectPoke").append(
+                                    `<option value="${element}">${element}</option>`
+                                )
+                            })
+                                
+                        }
+                    })
+                break;
+                case "5":
+                    $("#selectPoke option").remove()
+                    $.ajax({
+                        url: "https://pokeapi.co/api/v2/pokemon/?offset=493&limit=156",
+                        type: "GET",
+                        dataType: "JSON",
+                        success: function(pokemones) {
+                            const pokedex = pokemones.results;
+                            const pokedexName = pokedex.map(function(el) {
+                                return el.name.toUpperCase();
+                            });
+                            pokedexName.forEach(function(element) {
+                                $("#selectPoke").append(
+                                    `<option value="${element}">${element}</option>`
+                                )
+                            })
+                                
+                        }
+                    })
+                break;
+                case "6":
+                    $("#selectPoke option").remove()
+                    $.ajax({
+                        url: "https://pokeapi.co/api/v2/pokemon/?offset=649&limit=72",
+                        type: "GET",
+                        dataType: "JSON",
+                        success: function(pokemones) {
+                            const pokedex = pokemones.results;
+                            const pokedexName = pokedex.map(function(el) {
+                                return el.name.toUpperCase();
+                            });
+                            pokedexName.forEach(function(element) {
+                                $("#selectPoke").append(
+                                    `<option value="${element}">${element}</option>`
+                                )
+                            })
+                                
+                        }
+                    })
+                break;
+                case "7":
+                    $("#selectPoke option").remove()
+                    $.ajax({
+                        url: "https://pokeapi.co/api/v2/pokemon/?offset=721&limit=81",
+                        type: "GET",
+                        dataType: "JSON",
+                        success: function(pokemones) {
+                            const pokedex = pokemones.results;
+                            const pokedexName = pokedex.map(function(el) {
+                                return el.name.toUpperCase();
+                            });
+                            pokedexName.forEach(function(element) {
+                                $("#selectPoke").append(
+                                    `<option value="${element}">${element}</option>`
+                                )
+                            })
+                                
+                        }
+                    })
+                break;
+                case "8":
+                    $("#selectPoke option").remove()
+                    $.ajax({
+                        url: "https://pokeapi.co/api/v2/pokemon/?offset=809&limit=84",
+                        type: "GET",
+                        dataType: "JSON",
+                        success: function(pokemones) {
+                            const pokedex = pokemones.results;
+                            const pokedexName = pokedex.map(function(el) {
+                                return el.name.toUpperCase();
+                            });
+                            pokedexName.forEach(function(element) {
+                                $("#selectPoke").append(
+                                    `<option value="${element}">${element}</option>`
+                                )
+                            })
+                                
+                        }
+                    })
+                break;
+            }
         }
     })
 
@@ -41,7 +196,7 @@ $("document").ready(function(){
                 $("#pokeSprite2").attr("src", spriteBack);
 
                 let ability = data.abilities[0].ability.name;
-                $("#ability").text(ability);
+                $("#ability").text(ability.toUpperCase());
                 
                 //stats
                 let hp = data.stats[0].base_stat;
@@ -303,7 +458,7 @@ $("document").ready(function(){
                 $("#pokeSprite2").attr("src", spriteBack2);
 
                 let ability = data.abilities[0].ability.name;
-                $("#ability").text(ability);
+                $("#ability").text(ability.toUpperCase());
                 
                 //stats
                 let hp = data.stats[0].base_stat;

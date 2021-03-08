@@ -2,20 +2,27 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    &__input {
-        padding-top: 50px;
-        input {
-            height: 32px;
-            width: 160px;
-            margin-right: 15px;
+    &__name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-input {
+            padding-top: 50px;
+            input {
+                height: 32px;
+                width: 160px;
+                margin-right: 15px;
+            }
+        }
+        &-select {
+            display: flex;
+            flex-direction: column;   
+            padding-top: 10px; 
+            select {
+                height: 32px;
+                width: 200px;
+            }
         }
     }
-    &__select {
-        padding-top: 50px;
 
-        select {
-            height: 32px;
-            width: 200px;
-        }
-    }
 }

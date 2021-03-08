@@ -9925,18 +9925,25 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.header__input {
+.header__name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__name-input {
   padding-top: 50px;
 }
-.header__input input {
+.header__name-input input {
   height: 32px;
   width: 160px;
   margin-right: 15px;
 }
-.header__select {
-  padding-top: 50px;
+.header__name-select {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
 }
-.header__select select {
+.header__name-select select {
   height: 32px;
   width: 200px;
 }

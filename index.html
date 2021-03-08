@@ -30,26 +30,42 @@
         <main class="pokedex container">
 
             <header class="header">
-                <div class="header__buttons">
-                    <svg height="95" width="95">
-                        <circle class="circuloAzul" cx="45" cy="45" r="35" fill="blue" />
-                        <circle class="brilloAzul" cx="35" cy="35" r="13" fill="lightblue" />
-                    </svg>
-                    <svg height="36" width="36">
-                        <circle cx="20" cy="20" r="15" fill="red" />
-                    </svg>
+                <div>
+                    <div class="header__buttons">
+                        <svg height="95" width="95">
+                            <circle class="circuloAzul" cx="45" cy="45" r="35" fill="blue" />
+                            <circle class="brilloAzul" cx="35" cy="35" r="13" fill="lightblue" />
+                        </svg>
+                        <svg height="36" width="36">
+                            <circle cx="20" cy="20" r="15" fill="red" />
+                        </svg>
+                    </div>
                 </div>
 
-                <div class="header__input">
-                    <input type="text" placeholder="Escribe el Pokémon" id="inputPoke">
-                    <button class="ml-auto line" id="buttonPoke1">Buscar</button>
+                <div class="header__name">
+                    <div class="header__name-input">
+                        <input type="text" placeholder="Escribe el Pokémon" id="inputPoke">
+                        <button class=" mr-4 line" id="buttonPoke1">Buscar</button>
+                    </div>
+
+                    <div class="header__name-select">
+                        <select class="mb-2" name="Select Generacion" id="gen">
+                            <option value="0" >GENERACIÓN</option>
+                            <option value="1" id="gen1">I - KANTO</option>
+                            <option value="2" id="gen2">II - JOHTO</option>
+                            <option value="3" id="gen3">III - HOENN</option>
+                            <option value="4" id="gen4">IV - SINNOH</option>
+                            <option value="5" id="gen5">V - TESELIA</option>
+                            <option value="6" id="gen6">VI - KALOS</option>
+                            <option value="7" id="gen7">VII - ALOLA</option>
+                            <option value="8" id="gen8">VIII - GALAR</option>
+                        </select>
+                        <select name="" id="selectPoke">
+                            <option value="">SELECCIONE</option>
+                        </select>
+                    </div>
                 </div>
 
-                <div class="header__select">
-                    <select name="" id="selectPoke">
-                        <option value="">SELECCIONE</option>
-                    </select>
-                </div>
             </header>
             <hr>
             <section class="pokeIcon">
