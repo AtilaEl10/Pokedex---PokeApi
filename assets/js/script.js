@@ -433,6 +433,32 @@ $("document").ready(function(){
 
             }
         })
+// easter Egg missingno
+        if (pokeName0 == "missingno") {
+            $("#pokeName").text("MiSsInGnO");
+
+            $("#pokeSprite1").attr("src", "assets/img/missingno.png");
+
+            $("#pokeSprite2").attr("src", "assets/img/missingno.png");
+
+            $("#ability").text("#$-578&-0@!¿5/ª_");
+            
+            //stats
+            $("#hp").text("999");
+            $("#attack").text("999");
+            $("#defense").text("999");
+            $("#speed").text("999");
+            $("#attackSP").text("999");
+            $("#defenseSP").text("999");
+
+            $("#type2").text("Pajaro");
+
+            $("#bug, #dark, #dragon, #electric, #flying, #fairy, #fighting, #fire, #ghost, #grass, #ground, #ice, #normal, #poison, #psychic, #rock, #steel, #water").removeClass("hide")
+            $(".line").addClass("backglitch");
+            $("body").addClass("backglitch");
+
+            $(".glitch").removeClass("hide");
+        }
     });
 
 
